@@ -29,7 +29,10 @@
 							</table>
 						</div>
 					</td>
-					<td>		
+
+					<!-- add ing this comment into the html -->
+
+					<td>
 						<div ng-controller="ordersCtrl">
 							<table>
 								<tr ng-repeat="o in orders">
@@ -42,11 +45,11 @@
 				  				<tr>
 					  				<td align="center" colspan="5"><a ng-href="{{ orderssearch }}">Search</a></td>
 				  				</tr>
-				  			</table> 
+				  			</table>
 						</div>
 					</td>
 					<td>
-						<div ng-controller="itemsCtrl"> 
+						<div ng-controller="itemsCtrl">
 							<table>
 								<tr ng-repeat="i in items | orderBy : 'productName'">
 									<td><a ng-href="{{ i._links.self.href }}">{{ $index + 1 }}</a></td>
@@ -62,7 +65,7 @@
 					</td>
 				</tr>
 			</table>
-			<div ng-controller="specialCtrl"> 
+			<div ng-controller="specialCtrl">
 				<h1>{{ msg }}</h1>
  			</div>
 		</div>
